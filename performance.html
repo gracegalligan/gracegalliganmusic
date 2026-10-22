@@ -194,6 +194,25 @@ section{padding:clamp(3.6rem,7.5vw,6.5rem) clamp(1.2rem,5vw,4rem)}
   border:1.5px solid var(--line);padding:.6rem .9rem;border-radius:10px;transition:.2s var(--e);white-space:nowrap}
 .grp a:hover{border-color:var(--brass);color:var(--brass)}
 
+/* ASK FIRST */
+.ask{display:flex;align-items:center;gap:.6rem;flex-wrap:wrap;margin-top:.9rem;font-size:.93rem;color:var(--text-2)}
+.ask a{display:inline-flex;align-items:center;gap:.4rem;text-decoration:none;font-weight:700;font-size:.9rem;
+  padding:.6rem .95rem;border-radius:10px;border:1.5px solid var(--line);background:#fff;color:var(--text);transition:.2s var(--e)}
+.ask a:hover{border-color:var(--brass);color:var(--brass)}
+.ask a.wa{background:#1F7A4D;border-color:#1F7A4D;color:#fff}
+.ask a.wa:hover{background:#17633e;color:#fff}
+.ask svg{width:17px;height:17px}
+.fg{margin-bottom:1rem}
+.fg label{display:block;font-size:.8rem;font-weight:700;color:var(--text);margin-bottom:.45rem}
+.fg input,.fg select,.fg textarea{width:100%;padding:.9rem 1.05rem;border:1.5px solid var(--line);
+  background:var(--bone);font-family:Karla,sans-serif;font-size:.97rem;color:var(--text);
+  border-radius:11px;outline:none;transition:.2s var(--e);appearance:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--brass);background:#fff;box-shadow:0 0 0 4px rgba(182,124,36,.12)}
+.fg textarea{height:100px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.ok{display:none;padding:1.5rem;text-align:center;color:var(--green);font-weight:700}
+@media(max-width:600px){.row{grid-template-columns:1fr}}
+
 /* CONTACT */
 .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:2.1rem}
 .cbox{background:#fff;border:1px solid var(--line);border-radius:15px;padding:1.35rem;
@@ -283,7 +302,7 @@ footer{background:var(--green);color:rgba(251,248,242,.78);padding:2.4rem clamp(
 
 <div class="creds"><div class="creds-in">
   <div class="cred"><strong>Multiple All-Ireland Champion</strong><span>Uilleann pipes &amp; sean-nós</span></div>
-  <div class="cred"><strong>Rhythm of the Dance</strong><span>UK &amp; Ireland tour, 2024</span></div>
+  <div class="cred"><strong>Rhythm of the Dance</strong><span>UK tour, 2024</span></div>
   <div class="cred"><strong>RTÉ &amp; TG4</strong><span>National broadcast artist</span></div>
   <div class="cred"><strong>Milwaukee Irish Festival</strong><span>United States</span></div>
 </div></div>
@@ -304,7 +323,7 @@ footer{background:var(--green);color:rgba(251,248,242,.78);padding:2.4rem clamp(
     <span class="label rv">What Grace is available for</span>
     <h2 class="rv">Every stage.<br><em>Every occasion.</em></h2>
     <div class="grid">
-      <div class="card rv"><span class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M6 13c0-3 3-5 7-5s7 2 7 5-3 5-7 5-7-2-7-5z"/><path d="M20 11l7-4M20 13h7M20 15l7 4"/><path d="M13 18v9M10 27h6"/></svg></span><h3>Productions &amp; tours</h3><p>Available for touring productions across Ireland, the UK, Europe and North America.</p><span class="card-go" style="color:var(--text-3)">Touring</span></div>
+      <div class="card rv"><span class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M6 13c0-3 3-5 7-5s7 2 7 5-3 5-7 5-7-2-7-5z"/><path d="M20 11l7-4M20 13h7M20 15l7 4"/><path d="M13 18v9M10 27h6"/></svg></span><h3>Productions &amp; tours</h3><p>Available for touring productions in Ireland, the UK, Europe and North America.</p><span class="card-go" style="color:var(--text-3)">Touring</span></div>
       <div class="card rv"><span class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M25 3c0 12-5 21-14 26"/><path d="M7 29h18"/><path d="M11 29V17M15 29V12M19 29V8M23 29V5"/></svg></span><h3>Ceremony &amp; reception</h3><p>Harp for ceremony, drinks reception and evening — in Ireland and for destination weddings.</p><span class="card-go" style="color:var(--text-3)">Weddings</span></div>
       <div class="card rv"><span class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><rect x="12" y="4" width="8" height="13" rx="4"/><path d="M8 15a8 8 0 0 0 16 0"/><path d="M16 23v5M12 28h8"/></svg></span><h3>Festival stages</h3><p>Festival performances, Irish cultural events and céilís worldwide.</p><span class="card-go" style="color:var(--text-3)">Festivals</span></div>
       <div class="card rv"><span class="card-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"><path d="M4 20L26 6"/><path d="M3 21.5l2.5-1.7M27.5 5l1.5-1"/><circle cx="10" cy="16.5" r="1.1"/><circle cx="14.5" cy="13.5" r="1.1"/><circle cx="19" cy="10.5" r="1.1"/></svg></span><h3>Session &amp; studio</h3><p>Traditional session musician and remote studio recording on seven instruments.</p><span class="card-go" style="color:var(--text-3)">Sessions</span></div>
@@ -319,7 +338,7 @@ footer{background:var(--green);color:rgba(251,248,242,.78);padding:2.4rem clamp(
     <span class="label rv">Selected credits</span>
     <h2 class="rv">A musician built<br><em>for the stage.</em></h2>
     <div class="credits-grid">
-      <div class="credit rv"><span class="credit-yr">2024</span><h3>Rhythm of the Dance</h3><p>Touring production across the UK and Ireland — one of Ireland's most internationally recognised music and dance shows.</p></div>
+      <div class="credit rv"><span class="credit-yr">2024</span><h3>Rhythm of the Dance</h3><p>UK tour with one of Ireland's most internationally recognised music and dance shows.</p></div>
       <div class="credit rv"><span class="credit-yr">2023</span><h3>Milwaukee Irish Festival, USA</h3><p>Performed and taught at the largest Irish festival in North America, on a University of Limerick performance award.</p></div>
       <div class="credit rv"><span class="credit-yr">Ongoing</span><h3>National Folk Orchestra of Ireland</h3><p>Current member. Performances recorded and broadcast on RTÉ television and TG4.</p></div>
       <div class="credit rv"><span class="credit-yr">2019</span><h3>RTÉ Radio na Gaeltachta</h3><p>Live broadcast soloist at Oireachtas na Samhna.</p></div>
@@ -438,6 +457,11 @@ var io=new IntersectionObserver(function(es){es.forEach(function(e){
   if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},
   {threshold:.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%4)*60+'ms';io.observe(el)});
+document.querySelectorAll('form.ajax').forEach(function(f){f.addEventListener('submit',async function(e){
+  e.preventDefault();var b=f.querySelector('button');b.textContent='Sending…';b.disabled=true;
+  try{var r=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}});
+  if(!r.ok)throw 0;f.style.display='none';f.nextElementSibling.style.display='block';}
+  catch(x){b.textContent='Send message';b.disabled=false;alert('Something went wrong. Please WhatsApp or email Grace directly.')}})});
 </script>
 </body>
 </html>
